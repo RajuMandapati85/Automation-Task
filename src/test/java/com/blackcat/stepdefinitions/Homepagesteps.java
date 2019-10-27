@@ -6,16 +6,16 @@ import com.blackcat.utilities.DriverFactory;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.junit.Assert;
-
-import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Created by bothees on 27/11/2018.
  */
 public class Homepagesteps {
 
-    final static Logger logger = Logger.getLogger(Homepagesteps.class);
+    final static Logger logger = LoggerFactory.getLogger(Homepagesteps.class);
 
     Login login = PageFactory.initElements(DriverFactory.driver,Login.class);
 

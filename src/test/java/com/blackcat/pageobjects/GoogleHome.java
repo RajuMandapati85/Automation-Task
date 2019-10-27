@@ -2,7 +2,6 @@ package com.blackcat.pageobjects;
 
 import com.blackcat.utilities.DriverFactory;
 import com.blackcat.utilities.TestContext;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -61,7 +60,7 @@ public class GoogleHome extends DriverFactory {
         return Integer.parseInt(currencyValues.get(0).getAttribute("value"));
     }
 
-    public Double getValueOfDollor(){
+    public Double getValueOfDollar(){
         return Double.valueOf(currencyValues.get(1).getAttribute("value"));
     }
 

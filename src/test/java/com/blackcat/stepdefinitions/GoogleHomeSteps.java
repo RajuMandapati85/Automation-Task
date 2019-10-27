@@ -6,6 +6,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.support.PageFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.hamcrest.core.Is.is;
 
@@ -13,13 +15,15 @@ public class GoogleHomeSteps {
 
     GoogleHome googleHome = PageFactory.initElements(DriverFactory.driver,GoogleHome.class);
 
+    Logger logger = LoggerFactory.getLogger(GoogleHomeSteps.class);
+
     @Given("^I go to url$")
-    public void i_go_to_url() throws Throwable {
+    public void i_go_to_url() {
         googleHome.goToGoogleHomePage();
     }
 
     @Given("^I type \"([^\"]*)\" on search bar$")
-    public void i_type_on_search_bar(String conversion) throws Throwable {
+    public void i_type_on_search_bar(String conversion) {
         googleHome.searchForGBPToUSD(conversion);
     }
 
@@ -30,8 +34,8 @@ public class GoogleHomeSteps {
 
     @Then("^I should see USD value is greater than (\\d+)$")
     public void i_should_see_USD_value_is_greater_than(Double expectedUSDvalue) {
-        MatcherAssert.assertThat("GBP value should be 1",googleHome.getValueOfDollor() > expectedUSDvalue);;
+        logger.info("Dollar Value is"+googleHome.getValueOfDollar());
+        MatcherAssert.assertThat("USD value should be greater than 0", googleHome.getValueOfDollar() > expectedUSDvalue);;
     }
-
 
 }

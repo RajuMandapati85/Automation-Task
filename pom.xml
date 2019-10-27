@@ -82,21 +82,14 @@
       <version>1.2.5</version>
       <scope>test</scope>
     </dependency>
-      <dependency>
-        <groupId> org.apache.cassandra</groupId>
-        <artifactId>cassandra-all</artifactId>
-        <version>0.8.1</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.28</version>
+      <scope>test</scope>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
     <dependency>
       <groupId>commons-io</groupId>

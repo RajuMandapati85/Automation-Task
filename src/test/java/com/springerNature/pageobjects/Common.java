@@ -1,7 +1,6 @@
-package com.blackcat.pageobjects;
+package com.springerNature.pageobjects;
 
-import com.blackcat.utilities.DriverFactory;
-import org.openqa.selenium.WebDriver;
+import com.springerNature.utilities.DriverFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;

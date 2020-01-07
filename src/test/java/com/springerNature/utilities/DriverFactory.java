@@ -1,4 +1,4 @@
-package com.blackcat.utilities;
+package com.springerNature.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

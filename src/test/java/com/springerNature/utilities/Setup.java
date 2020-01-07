@@ -1,11 +1,7 @@
-package com.blackcat.utilities;
+package com.springerNature.utilities;
 
-import com.blackcat.utilities.DriverFactory;
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
 
 /**
  * Created by bothees on 27/11/2018.

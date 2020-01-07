@@ -1,6 +1,6 @@
-package com.blackcat;
+package com.springerNature;
 
-import com.blackcat.utilities.Setup;
+import com.springerNature.utilities.Setup;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;

@@ -1,4 +1,4 @@
-package com.blackcat.utilities;
+package com.springerNature.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

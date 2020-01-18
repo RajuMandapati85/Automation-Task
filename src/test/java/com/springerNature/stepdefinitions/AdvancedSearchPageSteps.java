@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class AdvancedSearchPageSteps {
 
-    AdvancedSearchPage advancedSearchPage = PageFactory.initElements(DriverFactory.driver,AdvancedSearchPage.class);
+    AdvancedSearchPage advancedSearchPage = PageFactory.initElements(DriverFactory.driver, AdvancedSearchPage.class);
 
     @Given("^User Clicks on Advanced search button$")
     public void user_Clicks_on_Advanced_search_button() {

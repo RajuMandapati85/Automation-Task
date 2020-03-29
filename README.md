@@ -10,7 +10,7 @@ This Test Framework is built with Following tech stack:
 
 * Clone the repostory locally
 * Create a Junit Runner with following VM options (Framework supports running tests using latest firefox and chrome browsers)
-* Runner Class to be selected is : com.springerNature.RunCuckesTest
+* Runner Class to be selected is : com.elsiver.RunCuckesTest
     `-Dbrowser=firefox -Dcucumber.options="--tags @search"`
 
 #### Driver Executables:

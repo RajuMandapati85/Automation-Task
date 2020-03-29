@@ -1,4 +1,4 @@
-package com.springerNature.utilities;
+package com.elsiver.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -14,7 +14,7 @@ import java.util.HashMap;
 
 
 /**
- * Created by bothees on 27/11/2018.
+ * Created by vmandapati on 27/03/2020.
  */
 public class DriverFactory {
 
@@ -41,7 +41,6 @@ public class DriverFactory {
     private WebDriver getLocalDriver() {
         if (System.getProperty("browser").equalsIgnoreCase("chrome")) {
             ChromeOptions options = getChromeCustomOptions();
-//            System.setProperty(CHROME_DRIVER, testContext.readproperty("CHROME.DRIVER"));
             WebDriverManager.getInstance(ChromeDriver.class).setup();
             driver = new ChromeDriver(options);
         } else if (System.getProperty("browser").equalsIgnoreCase("firefox")) {
@@ -75,5 +74,4 @@ public class DriverFactory {
         options.setCapability("chrome.verbose", false);
         return options;
     }
-
 }

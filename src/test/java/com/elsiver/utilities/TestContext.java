@@ -1,4 +1,4 @@
-package com.springerNature.utilities;
+package com.elsiver.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * Created by bothees on 27/11/2018.
+ * Created by vmandapati on 27/03/2020.
  */
 public class TestContext {
 

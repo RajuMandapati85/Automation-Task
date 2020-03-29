@@ -1,6 +1,6 @@
-package com.springerNature;
+package com.elsiver;
 
-import com.springerNature.utilities.Setup;
+import com.elsiver.utilities.Setup;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
@@ -11,8 +11,8 @@ import org.junit.runner.RunWith;
                  format ={"html:target/cucumber-html-report", "json:target/cucumber.json"},
                  tags = {"@test"},
                  features ="src/test/resources/features",
-                 glue = {"com.springerNature.utilities",
-                         "com.springerNature.stepdefinitions"})
+                 glue = {"com.elsiver.utilities",
+                         "com.elsiver.stepdefinitions"})
 
 public class RunCuckesTest extends Setup {
 

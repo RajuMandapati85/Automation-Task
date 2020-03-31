@@ -8,7 +8,7 @@ This Test Framework is built with Following tech stack:
 
 ### How to run the tests
 
-* Clone the repostory locally
+* Clone the repository locally
 * Create a Junit Runner with following VM options (Framework supports running tests using latest firefox and chrome browsers)
 * Runner Class to be selected is : com.elsiver.RunCuckesTest
     `-Dbrowser=chrome -Dcucumber.options="--tags @shopping-cart"`
